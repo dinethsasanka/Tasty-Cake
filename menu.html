@@ -5,29 +5,82 @@
     </head>
 
     <body>
-        <table class = "pricelist">
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
 
-            <tr>
-                <td>Brownie 100g</td>
-                <td>Rs.50</td>
-            </tr>
+        <h2 class = "priceTopic">Price List</h2>
 
-            <tr>
-                <td>Butter Cake 1kg</td>
-                <td>Rs.1000</td>
-              </tr>
-              <tr>
-                <td>Chocolate Cake 1kg</td>
-                <td>Rs.1200</td>
-              </tr>
-              <tr>
-                <td>Cheese Cake 1kg</td>
-                <td>Rs.1500</td>
-              </tr>
+        <section class="Menu-Section">
+            <p>Delicious Pie</p>
+            <div class="product list">
+                <div class="menu">
+                    
+                    <img src="cake pie.jpg" alt="Cake pie">
+                    <dl>
+                        <dt>Special Pie</dt>
+                        <dd>
+                            <span class="item-name">Black Current</span>
+                            <spanc class="item-price">Rs.100</span>
+                        </dd>
+
+                        <dt>Chocolate Pie</dt>
+                        <dd>
+                            <span class="item-name">With coca-cola</span>
+                            <span class="item-price">RS.200</span>
+                            <span class="item-name">With Tea </span>
+                            <span class="item-price">Rs.200</span>
+                            <span class="item-name">With Milk Shake</span>
+                            <span class="item-price">Rs.400</span>
+                        </dd>
+
+                        <dt>Vanilla Pie</dt>
+                        <dd>
+                            <span class="item-name">With coca-cola</span>
+                            <span class="item-price">RS.200</span>
+                            <span class="item-name">With Tea </span>
+                            <span class="item-price">Rs.200</span>
+                            <span class="item-name">With Milk Shake</span>
+                            <span class="item-price">Rs.400</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
         
     </body>
+
+    <style>
+        .Menu-Section p{
+            font-size: medium;
+            font-weight: bold;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        d  dl {
+            width: 100%; /* Full width for grid alignment */
+            margin: 0;
+            padding: 0;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            display: grid;
+            grid-template-columns: 1fr auto; 
+            margin: 0;
+            padding: 0;
+            margin-left: 10px; 
+            align-items: center; 
+        }
+
+        .item-name {
+            text-align: left; 
+        }
+
+        .item-price {
+            text-align: right; 
+        }
+    </style>
 </html>
