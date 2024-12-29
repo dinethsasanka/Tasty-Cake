@@ -19,8 +19,6 @@
         </div>
       </section>
 
-
-      
       <section class="section products">
         <h2>Our Bestselling Cakes</h2>
         <div class="product-list">
@@ -52,6 +50,43 @@
       </section>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".wrapper",
+      start: "top top",
+      end: "+=150%",
+      scrub: true,
+    }
+  });
+
+  timeline
+    .fromTo(
+      ".hero .text",
+      { scale: 0.7, opacity: 0 },
+      { scale: 1, opacity: 1, transformOrigin: "center center" }
+    )
+    .to(
+      ".hero .text",
+      { scale: 1.3, opacity: 0, transformOrigin: "center center" }
+    )
+    .fromTo(
+      ".products h2",
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0 }
+    )
+    .fromTo(
+      ".order h2",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0 }
+    );
+});
+
+  </script>
 
   <style>
     body, html {
@@ -153,41 +188,5 @@
 }
   </style>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".wrapper",
-      start: "top top",
-      end: "+=150%",
-      scrub: true,
-    }
-  });
-
-  timeline
-    .fromTo(
-      ".hero .text",
-      { scale: 0.7, opacity: 0 },
-      { scale: 1, opacity: 1, transformOrigin: "center center" }
-    )
-    .to(
-      ".hero .text",
-      { scale: 1.3, opacity: 0, transformOrigin: "center center" }
-    )
-    .fromTo(
-      ".products h2",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0 }
-    )
-    .fromTo(
-      ".order h2",
-      { opacity: 0, x: -100 },
-      { opacity: 1, x: 0 }
-    );
-});
-
-  </script>
 </body>
 </html>
