@@ -1,86 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Menu</title>
-    </head>
-
-    <body>
-
-        <h2 class = "priceTopic">Price List</h2>
-
-        <section class="Menu-Section">
-            <p>Delicious Pie</p>
-            <div class="product list">
-                <div class="menu">
-                    
-                    <img src="cake pie.jpg" alt="Cake pie">
-                    <dl>
-                        <dt>Special Pie</dt>
-                        <dd>
-                            <span class="item-name">Black Current</span>
-                            <spanc class="item-price">Rs.100</span>
-                        </dd>
-
-                        <dt>Chocolate Pie</dt>
-                        <dd>
-                            <span class="item-name">With coca-cola</span>
-                            <span class="item-price">RS.200</span>
-                            <span class="item-name">With Tea </span>
-                            <span class="item-price">Rs.200</span>
-                            <span class="item-name">With Milk Shake</span>
-                            <span class="item-price">Rs.400</span>
-                        </dd>
-
-                        <dt>Vanilla Pie</dt>
-                        <dd>
-                            <span class="item-name">With coca-cola</span>
-                            <span class="item-price">RS.200</span>
-                            <span class="item-name">With Tea </span>
-                            <span class="item-price">Rs.200</span>
-                            <span class="item-name">With Milk Shake</span>
-                            <span class="item-price">Rs.400</span>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </section>
-        
-    </body>
-
+<head>
+    <title>Menu</title>
     <style>
-        .Menu-Section p{
-            font-size: medium;
-            font-weight: bold;
-            font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("hongly-oung-oThkmPynm88-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #333;
         }
 
-        d  dl {
-            width: 100%; /* Full width for grid alignment */
+        /* Price Topic Styling */
+        .priceTopic {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50; /* Soft green */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+        }
+
+        /* Menu Section */
+        .Menu-Section {
+            background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px; /* Center the menu with a fixed width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the box */
+        }
+
+        .Menu-Section p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5722; /* Vibrant orange */
+            text-align: center;
+        }
+
+        dl {
             margin: 0;
             padding: 0;
         }
 
         dt {
+            font-size: 22px;
             font-weight: bold;
-            margin-top: 10px;
+            margin: 15px 0 5px;
+            color: #333;
+            border-bottom: 1px solid #ddd; /* Separator line */
+            padding-bottom: 5px;
         }
 
         dd {
-            display: grid;
-            grid-template-columns: 1fr auto; 
+            display: flex;
+            justify-content: space-between;
             margin: 0;
-            padding: 0;
-            margin-left: 10px; 
-            align-items: center; 
+            padding: 5px 0;
+            font-size: 18px;
+            color: #555;
+            border-bottom: 1px dashed #ddd; /* Dashed separator */
         }
 
         .item-name {
-            text-align: left; 
+            font-weight: bold;
+            color: #444;
         }
 
         .item-price {
-            text-align: right; 
+            color: #4CAF50; /* Soft green for price */
+        }
+
+        /* Buttons for interaction */
+        .order-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #FF5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #E64A19;
         }
     </style>
+</head>
+
+<body>
+    <h2 class="priceTopic">Price List</h2>
+
+    <section class="Menu-Section">
+        <p>Delicious Pie</p>
+        <div class="product-list">
+            <dl>
+                <!-- Combo Pack -->
+                <dt>Combo Pack</dt>
+                <dt>Special Pie</dt>
+                <dd>
+                    <span class="item-name">Black Current</span>
+                    <span class="item-price">Rs. 100</span>
+                </dd>
+
+                <!-- Chocolate Pie -->
+                <dt>Chocolate Pie</dt>
+                <dd>
+                    <span class="item-name">With Coca-Cola</span>
+                    <span class="item-price">Rs. 200</span>
+                </dd>
+                <dd>
+                    <span class="item-name">With Tea</span>
+                    <span class="item-price">Rs. 200</span>
+                </dd>
+                <dd>
+                    <span class="item-name">With Milk Shake</span>
+                    <span class="item-price">Rs. 400</span>
+                </dd>
+
+                <!-- Vanilla Pie -->
+                <dt>Vanilla Pie</dt>
+                <dd>
+                    <span class="item-name">With Coca-Cola</span>
+                    <span class="item-price">Rs. 200</span>
+                </dd>
+                <dd>
+                    <span class="item-name">With Tea</span>
+                    <span class="item-price">Rs. 200</span>
+                </dd>
+                <dd>
+                    <span class="item-name">With Milk Shake</span>
+                    <span class="item-price">Rs. 400</span>
+                </dd>
+
+                <!-- Cakes -->
+                <dt>Cakes</dt>
+                <dd>
+                    <span class="item-name">Chocolate Cake 1kg</span>
+                    <span class="item-price">Rs. 1500</span>
+                </dd>
+                <dd>
+                    <span class="item-name">Vanilla Cake 1kg</span>
+                    <span class="item-price">Rs. 1500</span>
+                </dd>
+                <dd>
+                    <span class="item-name">Ribbon Cake 1kg</span>
+                    <span class="item-price">Rs. 1500</span>
+                </dd>
+                <dd>
+                    <span class="item-name">Butter Cake 1kg</span>
+                    <span class="item-price">Rs. 1500</span>
+                </dd>
+            </dl>
+        </div>
+        <a href="#order" class="order-btn">Order Now</a>
+    </section>
+</body>
 </html>

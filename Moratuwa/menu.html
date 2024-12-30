@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu</title>
+    </head>
+
+    <body>
+
+        <h2 class = "priceTopic">Price List</h2>
+
+        <section class="Menu-Section">
+            <p>Delicious Pie</p>
+            <div class="product list">
+                <div class="menu">
+                    
+                    <img src="cake pie.jpg" alt="Cake pie">
+                    <dl>
+                        <dt>Special Pie</dt>
+                        <dd>
+                            <span class="item-name">Black Current</span>
+                            <spanc class="item-price">Rs.100</span>
+                        </dd>
+
+                        <dt>Chocolate Pie</dt>
+                        <dd>
+                            <span class="item-name">With coca-cola</span>
+                            <span class="item-price">RS.200</span>
+                            <span class="item-name">With Tea </span>
+                            <span class="item-price">Rs.200</span>
+                            <span class="item-name">With Milk Shake</span>
+                            <span class="item-price">Rs.400</span>
+                        </dd>
+
+                        <dt>Vanilla Pie</dt>
+                        <dd>
+                            <span class="item-name">With coca-cola</span>
+                            <span class="item-price">RS.200</span>
+                            <span class="item-name">With Tea </span>
+                            <span class="item-price">Rs.200</span>
+                            <span class="item-name">With Milk Shake</span>
+                            <span class="item-price">Rs.400</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+
+    <style>
+        .Menu-Section p{
+            font-size: medium;
+            font-weight: bold;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        d  dl {
+            width: 100%; /* Full width for grid alignment */
+            margin: 0;
+            padding: 0;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dd {
+            display: grid;
+            grid-template-columns: 1fr auto; 
+            margin: 0;
+            padding: 0;
+            margin-left: 10px; 
+            align-items: center; 
+        }
+
+        .item-name {
+            text-align: left; 
+        }
+
+        .item-price {
+            text-align: right; 
+        }
+    </style>
+</html>
