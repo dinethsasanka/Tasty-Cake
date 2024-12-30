@@ -1,71 +1,153 @@
-<html>
-    <head>
-        <title>
-            Tasty Cakes Sri Lanka
-        </title>
-            <link rel="stylesheet" type="text/css" href="cake.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Cakes Sri Lanka</title>
+    <link rel="stylesheet" type="text/css" href="cake.css">
+    <style>
         
-    </head>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd; 
+            color: #333;
+        }
 
-    <body>
-        <style>
-            ul{
-                list-style-type: none;
-                margin: 0%;
-                padding: 0%;
-                overflow: hidden;
-                background-color: black;
-                position:static;
-            }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
 
-            li{
-                float: left;
-            }
+        li {
+            float: left;
+        }
 
-            li a{
-                display: block;
-                color: azure;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-                padding:13px 15px ;
-                text-decoration:dotted;
-            }
-            li a:hover:not(.active)
-            {
-                background-color: aqua;
-            }
-            .active {
-                background-color: #03AA6D;
-            }
-        </style>
+        li a {
+            display: block;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-        <ul>
-            <li><a href="Cake.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="Order.html">Order</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        li a:hover {
+            background-color: #03AA6D; 
+        }
 
-
-        <div class = "Offers">
-            <h4>Best Cakes In Colombo</h4>
-            <h1>Tasty Cakes Sri Lanka</h1>
-
-            <h2 class = "tagline">Same day delivey - order before 4pm</h2>
-            <img src="B:\VS Code\Guided-Web-Application\Half_Cakes_830.jpg" width = 320px alt="Image of a cake">
-        </div>
-
-        <p>
-            We are selling cakes, bakery items and lunch. Enjoy the best Brownies and Drinks at
-
-            <strong style="color: blue">The Tasty Cakes.</strong>Browse our collection and order your favorite now.
-        </p>
+        .active {
+            background-color: #03AA6D; 
+        }
 
        
+        .Offers {
+            text-align: center;
+            margin: 30px auto;
+            padding: 20px;
+        }
 
-        </table>
-    </body>
+        .Offers h4 {
+            font-size: 24px;
+            color: #FF5722; 
+        }
 
-    <footer><p>&copy;2022. Tasty Cakes Sri Lanka.</footer>
+        .Offers h1 {
+            font-size: 36px;
+            color: #03AA6D;
+            font-weight: bold;
+        }
 
+        .Offers h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0 20px;
+        }
+
+        .Offers img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .Offers img:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+        }
+
+        
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+        }
+
+        strong {
+            font-size: 18px;
+            color: #1976D2; 
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #03AA6D;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <ul>
+        <li><a href="Cake.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+   
+    <div class="Offers">
+        <h4>Best Cakes in Colombo</h4>
+        <h1>Tasty Cakes Sri Lanka</h1>
+        <h2 class="tagline">Same-day delivery - order before 4 PM</h2>
+        <img src="hongly-oung-oThkmPynm88-unsplash.jpg" width="320px" alt="Image of a cake">
+    </div>
+
+  
+    <p>
+        We are selling cakes, bakery items, and lunch. Enjoy the best brownies and drinks at
+        <strong>The Tasty Cakes.</strong> Browse our collection and order your favorite now.
+    </p>
+
+    
+    <footer>
+        <p>&copy; 2022 Tasty Cakes Sri Lanka. All rights reserved.</p>
+        <p><a href="contact.html">Contact Us</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+</body>
 </html>
